@@ -242,6 +242,11 @@ h1 {
 </audio>
 
 <script>
+        /* ---------- PROTECTION ---------- */
+// Disable right click
+document.addEventListener("contextmenu", function (e) {
+    e.preventDefault();
+});
 /* ---------- AUDIO ---------- */
 const music = document.getElementById("goaMusic");
 const shakeSound = document.getElementById("shakeSound");
@@ -354,3 +359,4 @@ animateRipples();
 
 </body>
 </html>
+
