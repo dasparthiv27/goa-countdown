@@ -59,7 +59,7 @@ video {
     inset: 0;
     background: linear-gradient(
         to top,
-        rgba(0,255,200,0.25),
+        rgba(0, 94, 255, 0.107),
         transparent 70%
     );
 }
@@ -97,7 +97,7 @@ video {
     border-radius: 18px;
     max-width: 620px;
     width: 100%;
-    box-shadow: 0 0 35px rgba(0,255,200,0.45);
+    box-shadow: 0 0 35px rgba(255, 166, 0, 0.195);
     text-align: center;
 }
 
@@ -120,14 +120,14 @@ h1 {
     padding: 12px 16px;
     min-width: 70px;
     box-shadow:
-        0 0 12px rgba(0,255,200,0.35),
-        inset 0 0 8px rgba(0,255,200,0.25);
+        0 0 12px rgba(255, 242, 0, 0.342),
+        inset 0 0 8px rgba(0, 251, 255, 0.259);
 }
 
 .time-box .num {
     font-size: 2rem;
     font-weight: 800;
-    background: linear-gradient(90deg, #00ffe1, #00b3ff);
+    background: linear-gradient(90deg, #9c0303, #ffee00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -165,7 +165,7 @@ h1 {
 .progress-bar {
     height: 100%;
     width: 0%;
-    background: linear-gradient(90deg, #0062ff, #ff7700);
+    background: linear-gradient(90deg, #f0ed35d2, #74fff674);
     transition: width 1s linear;
 }
 
@@ -185,6 +185,7 @@ h1 {
     z-index: 5;
 }
 
+
 @keyframes shake {
     0% { transform: translateX(-50%) rotate(0deg); }
     20% { transform: translateX(-50%) rotate(-6deg); }
@@ -195,7 +196,7 @@ h1 {
 }
 
 .shake {
-    animation: shake 0.4s ease;
+    animation: shake 0.5s linear;
 }
 </style>
 </head>
@@ -219,7 +220,7 @@ h1 {
 
 <img src="assets/goa-icon.png" id="shakeImage" class="floating-image" alt="Goa Icon">
 
-<h1>Goa Trip Countdown 🌊🍹</h1>
+<h1>Goa Trip Countdown </h1>
 
 <div id="humanTime"></div>
 
@@ -244,11 +245,12 @@ h1 {
 </audio>
 
 <script>
-        /* ---------- PROTECTION ---------- */
+    /* ---------- PROTECTION ---------- */
 // Disable right click
 document.addEventListener("contextmenu", function (e) {
     e.preventDefault();
 });
+
 /* ---------- AUDIO ---------- */
 const music = document.getElementById("goaMusic");
 const shakeSound = document.getElementById("shakeSound");
@@ -361,7 +363,3 @@ animateRipples();
 
 </body>
 </html>
-
-
-
-
