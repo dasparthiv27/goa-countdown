@@ -175,12 +175,14 @@ h1 {
 /* Interactive image */
 .floating-image {
     position: absolute;
-    top: -120px;
+    top: -155px;          /* was -120px (too high) */
     left: 50%;
     transform: translateX(-50%);
-    width: 225px;
+    width: 100px;        /* smaller size */
+    height: auto;
     cursor: pointer;
     user-select: none;
+    z-index: 5;
 }
 
 @keyframes shake {
@@ -359,4 +361,5 @@ animateRipples();
 
 </body>
 </html>
+
 
